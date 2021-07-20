@@ -1,0 +1,19 @@
+GET http://localhost:5000/api/
+###
+post http://localhost:5000/api/posts
+Content-Type: application/json
+
+{
+    "title":"admin",
+    "content":"admin"
+}
+###
+patch http://localhost:5000/api/posts/60f41bbefca84454e46782bd
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGU4NjNiMjVlYzk3ZDNmZjRjYjQ0YzEiLCJpYXQiOjE2MjU5MTYxNDN9.d_oZCMWwasb4Ew6djrY3_AzT7DYx0vURJf9bZEfTEE4
+{
+"title":"admin",
+"content":"admin1"
+}
+###
+DELETE http://localhost:5000/api/post/60e988fb81d62534c07c42e9
